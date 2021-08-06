@@ -1,0 +1,77 @@
+26-05-2021_22-37-29
+Dataset: Climate Model Sim Crash Dataset
+Parameter Settings: 
+	Maximum Generation: 7000
+	Population Size: 1000
+	Crossover Probability: 0.9
+	Mutation Probability: 0.15
+	Maximum Tree Depth: 3
+	Training Fitness Function: F-Measure
+
+---- 5-Fold Cross-Validation Process ----
+
+Fold 1 of 5
+Training: 
+	Generations: 7000
+	Function: ÷(-(×(convect_corr, vconst_2), exp(bckgrnd_vdc1, efficiency_factor)), -(+(ah_bolus, ah_corr), ×(ah_corr, vconst_4)))
+	Depth: 3
+	F-Measure Fitness: 0.4782608695652174
+Testing Fitness: 
+	Accuracy: 0.8990825688073395
+	Precision: 0.42857142857142855
+	Recall: 0.3
+	F-Measure: 0.3529411764705882
+
+Fold 2 of 5
+Training: 
+	Generations: 7000
+	Function: -(<(<(tidal_mix_max, efficiency_factor, vconst_3, ah_bolus), +(Const(0.6553732180734955), vconst_3), rt(vconst_2, vconst_corr), -(bckgrnd_vdc_ban, bckgrnd_vdc1)), ÷(÷(bckgrnd_vdc1, vconst_2), >(bckgrnd_vdc_ban, Prandtl, vconst_2, efficiency_factor)))
+	Depth: 3
+	F-Measure Fitness: 0.4565217391304348
+Testing Fitness: 
+	Accuracy: 0.9537037037037037
+	Precision: 0.7
+	Recall: 0.7777777777777778
+	F-Measure: 0.7368421052631577
+
+Fold 3 of 5
+Training: 
+	Generations: 7000
+	Function: rt(==(+(efficiency_factor, vconst_7), ÷(Prandtl, vconst_3), ==(convect_corr, vertical_decay_scale, bckgrnd_vdc_psim, vconst_corr), ÷(bckgrnd_vdc1, convect_corr)), -(×(vconst_2, vconst_corr), ÷(bckgrnd_vdc1, convect_corr)))
+	Depth: 3
+	F-Measure Fitness: 0.5161290322580645
+Testing Fitness: 
+	Accuracy: 0.8888888888888888
+	Precision: 0.36363636363636365
+	Recall: 0.4444444444444444
+	F-Measure: 0.39999999999999997
+
+Fold 4 of 5
+Training: 
+	Generations: 7000
+	Function: ×(÷(rt(Const(0.5826664427624177), convect_corr), <(Prandtl, vconst_7, vertical_decay_scale, efficiency_factor)), -(×(vconst_corr, vconst_2), exp(bckgrnd_vdc1, vconst_2)))
+	Depth: 3
+	F-Measure Fitness: 0.574074074074074
+Testing Fitness: 
+	Accuracy: 0.8796296296296297
+	Precision: 0.3888888888888889
+	Recall: 0.7777777777777778
+	F-Measure: 0.5185185185185185
+
+Fold 5 of 5
+Training: 
+	Generations: 7000
+	Function: +(>(÷(vconst_3, bckgrnd_vdc1), ×(vertical_decay_scale, bckgrnd_vdc1), rt(tidal_mix_max, convect_corr), ×(vconst_5, convect_corr)), -(rt(vconst_corr, vconst_2), +(Const(0.7190571818386805), bckgrnd_vdc1)))
+	Depth: 3
+	F-Measure Fitness: 0.5476190476190476
+Testing Fitness: 
+	Accuracy: 0.8691588785046729
+	Precision: 0.3684210526315789
+	Recall: 0.7777777777777778
+	F-Measure: 0.5
+
+---- Final Results ----
+Average accuracy: 0.8980927339068469
+Average precision: 0.44990354674565197
+Average recall: 0.6155555555555555
+Average f-measure: 0.5016603600504529

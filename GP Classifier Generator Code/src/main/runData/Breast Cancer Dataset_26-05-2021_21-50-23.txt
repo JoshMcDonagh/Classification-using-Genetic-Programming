@@ -1,0 +1,77 @@
+26-05-2021_21-50-23
+Dataset: Breast Cancer Dataset
+Parameter Settings: 
+	Maximum Generation: 7000
+	Population Size: 1000
+	Crossover Probability: 0.9
+	Mutation Probability: 0.15
+	Maximum Tree Depth: 3
+	Training Fitness Function: F-Measure
+
+---- 5-Fold Cross-Validation Process ----
+
+Fold 1 of 5
+Training: 
+	Generations: 7000
+	Function: -(-(exp(UniformityOfCellSize, BareNuclei), ×(BareNuclei, SingleEpithelialCellSize)), rt(+(Mitoses, Mitoses), ×(UniformityOfCellSize, NormalNucleoli)))
+	Depth: 3
+	F-Measure Fitness: 0.93573264781491
+Testing Fitness: 
+	Accuracy: 0.9124087591240876
+	Precision: 0.9285714285714286
+	Recall: 0.8125
+	F-Measure: 0.8666666666666666
+
+Fold 2 of 5
+Training: 
+	Generations: 7000
+	Function: -(<(<(Mitoses, UniformityOfCellShape, ClumpThickness, MarginalAdhesion), exp(UniformityOfCellSize, ClumpThickness), exp(ClumpThickness, UniformityOfCellShape), exp(UniformityOfCellSize, Mitoses)), -(÷(ClumpThickness, Const(0.038813117656834595)), ×(NormalNucleoli, SingleEpithelialCellSize)))
+	Depth: 3
+	F-Measure Fitness: 0.935064935064935
+Testing Fitness: 
+	Accuracy: 0.9343065693430657
+	Precision: 0.8979591836734694
+	Recall: 0.9166666666666666
+	F-Measure: 0.9072164948453607
+
+Fold 3 of 5
+Training: 
+	Generations: 7000
+	Function: -(+(exp(BareNuclei, SingleEpithelialCellSize), exp(SingleEpithelialCellSize, BlandChromatin)), rt(rt(UniformityOfCellSize, Const(0.2543239770502864)), +(UniformityOfCellShape, SingleEpithelialCellSize)))
+	Depth: 3
+	F-Measure Fitness: 0.9261083743842365
+Testing Fitness: 
+	Accuracy: 0.948905109489051
+	Precision: 0.8727272727272727
+	Recall: 1.0
+	F-Measure: 0.9320388349514563
+
+Fold 4 of 5
+Training: 
+	Generations: 7000
+	Function: -(exp(exp(UniformityOfCellShape, Mitoses), >(UniformityOfCellShape, BareNuclei, SingleEpithelialCellSize, BareNuclei)), +(>(NormalNucleoli, Mitoses, MarginalAdhesion, NormalNucleoli), ÷(UniformityOfCellShape, Const(0.10434338576547086))))
+	Depth: 3
+	F-Measure Fitness: 0.9536082474226804
+Testing Fitness: 
+	Accuracy: 0.9708029197080292
+	Precision: 0.9230769230769231
+	Recall: 1.0
+	F-Measure: 0.9600000000000001
+
+Fold 5 of 5
+Training: 
+	Generations: 7000
+	Function: -(×(==(SingleEpithelialCellSize, UniformityOfCellShape, Mitoses, UniformityOfCellShape), >(UniformityOfCellShape, Const(0.9481345960609864), BareNuclei, SingleEpithelialCellSize)), +(+(BareNuclei, UniformityOfCellShape), 1.1786402565478684))
+	Depth: 3
+	F-Measure Fitness: 0.93717277486911
+Testing Fitness: 
+	Accuracy: 0.9259259259259259
+	Precision: 0.9111111111111111
+	Recall: 0.8723404255319149
+	F-Measure: 0.891304347826087
+
+---- Final Results ----
+Average accuracy: 0.9384698567180318
+Average precision: 0.906689183832041
+Average recall: 0.9203014184397162
+Average f-measure: 0.9114452688579142
