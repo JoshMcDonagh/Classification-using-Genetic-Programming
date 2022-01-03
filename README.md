@@ -1,1 +1,6 @@
-# Classification-using-Genetic-Programming
+﻿# Classification using Genetic Programming
+The repository for my BSc dissertation on the 'Evolutionary Generation of Classifiers using Genetic Programming' which achieved a First mark.
+## Abstract
+One of the areas of artificial intelligence in which a growing level of research and understanding is being developed is within that of genetic programming (GP), a technique that allows for the solving of potentially complex problems by evolving programs. As our knowledge in GP becomes more comprehensive, the scope for which GP can be applied becomes ever wider, including that of the widely encountered problem of classification.
+
+This dissertation proposes and implements a way in which GP can be applied to solve two classification problem instances: the diagnosis of breast cancer patients and the predicting of whether a climate model will fail when simulated given certain parameters. This paper includes the methodologies that will be necessary to complete this work, the design of the GP system, how it will be implemented and configured (including configurations after tuning), and an evaluation of its performance compared with other relevant alternative machine learning methods. Finally, this paper will provide a concluding review of the project, the objectives and tasks it has involved, how they were performed, and final reflections on the project and the processes involved to complete it.
